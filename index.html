@@ -37,16 +37,37 @@
 	}
 	
 	.centered-image {
-	display: flex;
-	justify-content: center; 
-	align-items: center;                
+		display: flex;
+		justify-content: center; 
+		align-items: center;                
 	}
 
 	.centered-image img {
-	width: 250px;
-	height: 250px;
+		width: 250px;
+		height: 250px;
 	}
 
+	.centered-image-right {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.centered-image-right img {
+		height: 250px;
+		width: 250px;
+	}
+
+	.centered-image-left {
+		display: flex;
+		justfiy-content: flex-start;
+		align-items: center;
+	}
+
+	.centered-image-left img {
+		height: 250px
+		width: 250px
+	}
 		
   </style>
 </head>
@@ -59,10 +80,10 @@
   	<p>Welcome to FutureSite, your go-to platform for innovative solutions and cutting-edge technology. We are committed to delivering exceptional user experiences, insightful content, and reliable services tailored to meet your evolving needs. Explore our diverse range of products and stay ahead with the latest updates from the world of technology. </p>
   	<p> secondary description</p>
   </div>
-  <div class= "images-in-row">
-  	<img src="image1.jpg" alt="Image 1">
-  	<img src="image2.jpg" alt="Image 2">
-  	<img src="image3.jpg" alt="Image 3">
+  <div>
+  	<img class="centered-image-left" src="image1.jpg" alt="Image 1">
+  	<img class="centered-image" src="image2.jpg" alt="Image 2">
+  	<img class="centered-image-right" src="image3.jpg" alt="Image 3">
   </div>
   <div class="centered-image">
   	<img src=cat-roomba.gif>

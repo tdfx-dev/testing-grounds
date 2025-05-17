@@ -60,7 +60,7 @@
 
 	.centered-image-left {
 		display: flex;
-		justfiy-content: flex-start;
+		justifiy-content: flex-start;
 		align-items: center;
 	}
 
@@ -81,9 +81,17 @@
   	<p> secondary description</p>
   </div>
   <div>
-  	<img class="centered-image-left" src="image1.jpg" alt="Image 1">
-  	<img class="centered-image" src="image2.jpg" alt="Image 2">
-  	<img class="centered-image-right" src="image3.jpg" alt="Image 3">
+  	<div class="centered-image-left">
+  		<img src="image1.jpg" alt="Image 1">
+	</div>
+
+	<div class="centered-image">
+  		<img src="image2.jpg" alt="Image 2">
+	</div>
+
+	<div class="centered-image-right">
+  		<img src="image3.jpg" alt="Image 3">
+	</div>
   </div>
   <div class="centered-image">
   	<img src=cat-roomba.gif>

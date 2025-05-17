@@ -2,10 +2,31 @@
 <html>
   <head>
     <style>
-      
+      .expand-on-hover {
+		    transition: transform 0.3s ease;
+	    }
+
+	    .expand-on-hover:hover {
+		    transform: scale(1.2);
+	    }
+      .centered-image {
+		    display: flex;
+		    justify-content: center; 
+		    align-items: center;                
+	    }
+
+	    .centered-image img {
+		    width: 10vw;
+		    height: auto;
+	    }
     </style>
   </head>
   <body>
+    <div class="expand-on-hover centered-image">
+      <a href="https://tdfx-dev.github.io/testing-grounds/">
+        <img src="box.jpg">
+      </a>
+    </div>
     <h1>third</h1>
   </body>
 </html>

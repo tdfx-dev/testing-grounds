@@ -25,15 +25,16 @@
 		word-break: break-word;
 	}
 	
-	.images-in-row {
-		display: flex;
-		gap: 332px;
-		flex-wrap: wrap;
+	.image-row {
+  		display: flex;
+  		justify-content: space-between; /* or center, space-around, etc. */
+  		align-items: center;
+  		gap: 20px; /* optional spacing */
+  		padding: 20px;
 	}
-	
-	.images-in-row img {
-		width: 200px;
-		height: auto;
+	.image-row img {
+  		width: 150px; /* or whatever you want */
+  		height: auto;
 	}
 	
 	.centered-image {
@@ -68,11 +69,19 @@
 		width: 20vw;
 		height: auto;
 	}
+
+	.expand-on-hover {
+		transition: transform 0.3s ease;
+	}
+
+	.expand-on-hover:hover {
+		transform: scale(1.2);
+	}
 		
   </style>
 </head>
 <body>
-  <div class = "centered-image">
+  <div class = "centered-image expand-on-hover">
   	<a href="https://tdfx-dev.github.io/testing-grounds/">
 		<img src="box.jpg">
 	</a>
@@ -82,7 +91,7 @@
   	<p>Welcome to FutureSite, your go-to platform for innovative solutions and cutting-edge technology. We are committed to delivering exceptional user experiences, insightful content, and reliable services tailored to meet your evolving needs. Explore our diverse range of products and stay ahead with the latest updates from the world of technology. </p>
   	<p> secondary description</p>
   </div>
-  <div class="images-in-row">
+  <div class="image-row">
   	<div class="centered-image-left">
   		<img src="image1.jpg" alt="Image 1">
 	</div>

@@ -2,14 +2,15 @@
 <html>
   <head>
     <style>
-      .expand-on-hover {
+	    .expand-on-hover {
 		    transition: transform 0.3s ease;
 	    }
 
 	    .expand-on-hover:hover {
 		    transform: scale(1.2);
 	    }
-      .centered-image {
+	    
+	    .centered-image {
 		    display: flex;
 		    justify-content: center; 
 		    align-items: center;                
@@ -19,14 +20,54 @@
 		    width: 10vw;
 		    height: auto;
 	    }
+
+	    .small-text {
+		    display:flex;
+		    font-size:2vw;
+	    }
+
+	    .row {
+  		display: flex;
+  		justify-content: space-between; /* or center, space-around, etc. */
+  		align-items: center;
+  		gap: 20px; /* optional spacing */
+  		padding: 20px;
+	   }
+	    
     </style>
   </head>
   <body>
-    <div class="centered-image expand-on-hover">
-      <a href="https://tdfx-dev.github.io/testing-grounds/">
-        <img src="box.jpg">
-      </a>
-    </div>
+   <div class="row">
+	<div class="small-text expand-on-hover">
+		<a href="https://tdfx-dev.github.io/testing-grounds/1/">
+			<p>test 1</p>
+		</a>
+	</div>
+	<div class="small-text expand-on-hover">
+		<a href="https://tdfx-dev.github.io/testing-grounds/2/">
+			<p>test 2</p>
+		</a>
+	</div>
+	<div class="small-text expand-on-hover">
+		<a href="https://tdfx-dev.github.io/testing-grounds/3/">
+			<p>test 3</p>
+		</a>
+	</div>
+	<div class = "centered-image expand-on-hover">
+  		<a href="https://tdfx-dev.github.io/testing-grounds/home">
+			<img src="box.jpg">
+		</a>
+  	</div>
+	<div class="small-text expand-on-hover">
+		<p>test 4</p>
+	</div>
+	<div class="small-text expand-on-hover">
+		<p>test 5</p>
+	</div>
+	<div class="small-text expand-on-hover">
+		<p>test 6</p>
+	</div>
+  </div>
     <h1>second</h1>
   </body>
 </html>

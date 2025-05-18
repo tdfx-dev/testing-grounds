@@ -91,39 +91,6 @@
 			opacity:1;
 		}
 	}
-
-	.fullscreen-fade-shrink {
-  animation: growThenShrink 2s ease-in-out forwards;
-  position: relative;
-  z-index: 10;
-}
-
-@keyframes growThenShrink {
-  0% {
-    transform: scale(5);   /* Grow big */
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  70% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0; /* optional, if you want it to disappear */
-    position: relative;
-    width: auto;
-    height: auto;
-  }
-}
-
 		
   </style>
 </head>
@@ -145,7 +112,7 @@
 			<p>test 3</p>
 		</a>
 	</div>
-	<div class = "centered-image expand-on-hover fullscreen-fade-shrink">
+	<div class = "centered-image expand-on-hover">
   		<a href="https://tdfx-dev.github.io/testing-grounds/home">
 			<img src="box.jpg">
 		</a>
